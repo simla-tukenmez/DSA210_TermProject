@@ -167,7 +167,7 @@ These or similar methodologies are planned to be used depending on data quality 
 
 ---
 
-## 🔮 Limitations & Future Work
+## Limitations & Future Work
 
 - News data will initially be limited to selected Turkish outlets; expanding to other media could improve coverage.  
 - Sentiment classification may face accuracy challenges in mixed-language content.  
@@ -176,14 +176,14 @@ These or similar methodologies are planned to be used depending on data quality 
 
 ---
 
-## 🎓 Academic Integrity
+## Academic Integrity
 
 This work is original and created for **DSA 210 – Introduction to Data Science**.  
 AI tools (e.g., LLMs) are used only for writing assistance and debugging, following Sabancı University’s academic integrity policies.
 
 ---
 
-## 👤 Author
+## Author
 
 **Simla Tükenmez**  
 Sabancı University  
