@@ -3,7 +3,7 @@
 # Digital Panic and Market Dynamics: Turkey's Economic Transformation (2023–2025)
 
 **DSA 210 - Introduction to Data Science**  
-**Fall 2025–2026**  
+**Fall 2025-2026**  
 **Sabancı University**  
 **Student/ID: Simla Tükenmez / 32613**
 
@@ -45,7 +45,7 @@ These turning points allow the project to investigate:
 1. Did the 2023 earthquake or election uncertainty trigger short-term market panic?  
 2. Can search volume and social sentiment anticipate exchange rate volatility?  
 3. Does social media sentiment precede or predict BIST100 movements?  
-4. How do market behaviors differ between tightening (2023–2024) and normalization (2025)?  
+4. How do market behaviors differ between tightening (2023-2024) and normalization (2025)?  
 
 ---
 
@@ -187,8 +187,8 @@ AI tools (e.g., LLMs) are used only for writing assistance and debugging, follow
 
 **Simla Tükenmez**  
 Sabancı University  
-Fall 2025–2026  
-DSA 210 – Introduction to Data Science  
+Fall 2025-2026  
+DSA 210 - Introduction to Data Science  
 
 ---
 
