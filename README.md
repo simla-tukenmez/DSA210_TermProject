@@ -12,7 +12,7 @@
 ## Project Overview
 
 This project explores how major societal events and economic policy shifts in Turkey (2023–2025) influenced financial markets through the lens of both **traditional economic indicators** and **digital behavioral data**.  
-It aims to understand whether **digital panic indicators** -derived from search trends, social media sentiment, and news tone— can explain stock market movements more effectively than traditional macroeconomic metrics.
+It aims to understand whether **digital panic indicators** -derived from search trends, social media sentiment, and news tone- can explain stock market movements more effectively than traditional macroeconomic metrics.
 
 **Central Question:**  
 > Can digital panic indicators explain BIST100 movements better than traditional macroeconomic indicators alone?
