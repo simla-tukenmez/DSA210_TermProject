@@ -1,0 +1,87 @@
+================================================================================
+H6: HYBRID MODEL COMPARISON - RESULTS
+================================================================================
+
+Analysis Date: 2025-11-30 03:13:19
+Student: Simla Tükenmez (32613)
+Course: DSA210 - Fall 2025-2026
+
+================================================================================
+RESEARCH QUESTION
+================================================================================
+
+Do digital panic indicators (Google Trends, Sentiment) provide
+incremental predictive value beyond traditional economic indicators?
+
+================================================================================
+METHODOLOGY
+================================================================================
+
+Target Variable: Forward 7-day volatility
+
+Model 1 - Traditional:
+  Predictors: USD_TRY_Change, Funding_Cost_Change
+
+Model 2 - Digital:
+  Predictors: Digital_Panic_Index, Sentiment_Score
+
+Model 3 - Hybrid:
+  Predictors: All of the above
+
+Sample Size: 687 observations
+
+================================================================================
+MODEL PERFORMANCE
+================================================================================
+
+Traditional Model:
+  R²:     0.0026
+  RMSE:   0.8200%
+
+Digital Model:
+  R²:     0.0187
+  RMSE:   0.8133%
+
+Hybrid Model:
+  R²:     0.0198
+  RMSE:   0.8128%
+
+================================================================================
+IMPROVEMENT ANALYSIS
+================================================================================
+
+Hybrid vs Traditional:
+  ΔR² =   0.0172 (+655.1%)
+  ΔRMSE =  -0.0071%
+
+F-Test (Nested Models):
+  F-statistic:   5.9912
+  P-value:       0.0026
+
+================================================================================
+HYBRID MODEL COEFFICIENTS
+================================================================================
+
+  Digital_Panic_Index      :   0.821974
+  Sentiment_Score          :  -0.239864
+  USD_TRY_Change           :   0.049141
+  Funding_Cost_Change      :  -0.029537
+
+================================================================================
+CONCLUSION
+================================================================================
+
+Decision: H6 is SUPPORTED
+
+The hybrid model SIGNIFICANTLY outperforms the traditional model.
+Adding digital panic indicators improves R² by 0.0172.
+
+INTERPRETATION:
+Digital indicators (Google Trends, social sentiment) capture
+behavioral/psychological dimensions of market volatility that
+traditional economic indicators miss. This validates the use
+of digital data sources in financial prediction models.
+
+================================================================================
+END OF REPORT
+================================================================================
