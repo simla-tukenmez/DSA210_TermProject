@@ -127,10 +127,10 @@ DSA210_TermProject/
 │   ├── H3_regime_shift/
 │   ├── H4_search_behavior/
 │   ├── H5_sentiment_leading/
-│   └── H6_hybrid_vs_tradionational/
+│   └── H6_hybrid_vs_tradionational/ 
 │
-├── requirements.txt
-└── README.md
+├── README.md
+└── requirements.txt
 ```
 ---
 ## 📊 Dataset
