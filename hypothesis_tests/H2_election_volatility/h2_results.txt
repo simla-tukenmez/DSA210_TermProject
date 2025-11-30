@@ -1,0 +1,104 @@
+================================================================================
+H2: ELECTION VOLATILITY TEST - RESULTS
+================================================================================
+
+Analysis Date: 2025-11-30 03:12:39
+Student: Simla Tükenmez (32613)
+Course: DSA210 - Fall 2025-2026
+
+================================================================================
+RESEARCH QUESTION
+================================================================================
+
+Did the May 2023 Turkish elections cause significantly higher
+volatility in BIST100 stock index returns?
+
+================================================================================
+HYPOTHESES
+================================================================================
+
+H0 (Null):        Variance(election) = Variance(non-election)
+H2 (Alternative): Variance(election) > Variance(non-election)
+
+================================================================================
+METHODOLOGY
+================================================================================
+
+Comparison Periods:
+  Election period:     May 1-31, 2023
+  Non-election period: Jan-Apr, Jun-Dec 2023
+
+Election Context:
+  Round 1: May 14, 2023 (presidential election)
+  Round 2: May 28, 2023 (runoff election)
+
+Statistical Tests:
+  Primary: Levene's test (robust to non-normality)
+  Secondary: F-test for variance ratio
+
+================================================================================
+DESCRIPTIVE STATISTICS
+================================================================================
+
+Non-Election Period (2023, excluding May):
+  Observations:  226
+  Mean return:     0.0976%
+  Std deviation:   2.3028%
+  Variance:        5.3028
+  Min:            -9.0125%
+  Max:             9.4234%
+
+Election Month (May 2023):
+  Observations:  21
+  Mean return:     0.2696%
+  Std deviation:   3.0382%
+  Variance:        9.2304
+  Min:            -6.3355%
+  Max:             7.5712%
+
+Volatility Comparison:
+  Variance ratio (Election/Non-Election): 1.7407
+  → Election month was 74.1% MORE volatile
+
+================================================================================
+STATISTICAL TEST RESULTS
+================================================================================
+
+Levene's Test (Primary):
+  Test statistic:         1.5792
+  P-value (one-tailed):   0.1050
+  Significance level:   α = 0.05
+
+F-Test (Robustness Check):
+  F-statistic:            1.7407
+  P-value (one-tailed):   0.0287
+
+================================================================================
+CONCLUSION
+================================================================================
+
+Decision: FAIL TO REJECT H0 at α = 0.05
+
+H2 is NOT SUPPORTED. The election month did NOT show significantly
+higher volatility compared to non-election periods.
+
+Although election volatility (σ = 3.0382%) differed from
+non-election volatility (σ = 2.3028%), this difference
+was not statistically significant (p = 0.1050).
+
+================================================================================
+INTERPRETATION
+================================================================================
+
+Political events like elections can increase market uncertainty,
+leading to higher volatility. This test examined whether the
+2023 Turkish presidential election created such volatility.
+
+The lack of significant volatility increase may indicate:
+1. Markets had already priced in election outcomes
+2. Election results were not surprising to investors
+3. Other factors dominated market volatility in 2023
+
+================================================================================
+END OF REPORT
+================================================================================
