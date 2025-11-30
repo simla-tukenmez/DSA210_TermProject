@@ -1,0 +1,76 @@
+================================================================================
+H4: GOOGLE TRENDS - VOLATILITY CORRELATION - RESULTS
+================================================================================
+
+Analysis Date: 2025-11-30 03:12:49
+Student: Simla Tükenmez (32613)
+Course: DSA210 - Fall 2025-2026
+
+================================================================================
+RESEARCH QUESTION
+================================================================================
+
+Does Google search interest in economic terms correlate with
+BIST100 market volatility?
+
+================================================================================
+METHODOLOGY
+================================================================================
+
+Digital Panic Index:
+  Composite of 2 Google Trends keywords:
+    - dolar_kuru
+    - enflasyon
+
+  Each normalized to 0-1 scale, then averaged
+
+Volatility Measures:
+  - Absolute Returns: |daily return|
+  - 7-day Rolling Volatility: std(returns, 7 days)
+  - 30-day Rolling Volatility: std(returns, 30 days)
+
+Sample Size: 671 observations
+
+================================================================================
+CORRELATION RESULTS
+================================================================================
+
+Digital Panic Index ↔ Absolute Returns:
+  r =   0.1685
+  p =   0.0000 ***
+
+Digital Panic Index ↔ Volatility (7-day):
+  r =   0.2442
+  p =   0.0000 ***
+
+Digital Panic Index ↔ Volatility (30-day):
+  r =   0.3085
+  p =   0.0000 ***
+
+================================================================================
+REGRESSION ANALYSIS
+================================================================================
+
+Model: Volatility_7d = β₀ + β₁ * Digital_Panic_Index + ε
+
+Results:
+  β₀ (Intercept):         1.2848
+  β₁ (Panic Index):       1.5954 ***
+  P-value(β₁):            0.0000
+  R²:                     0.0596
+
+================================================================================
+CONCLUSION
+================================================================================
+
+Decision: H4 is SUPPORTED
+
+A SIGNIFICANT positive correlation exists between digital panic
+(Google search interest) and market volatility (r = 0.2442, p = 0.0000).
+
+The weak-to-moderate correlation suggests digital panic has measurable
+but limited predictive power for market volatility.
+
+================================================================================
+END OF REPORT
+================================================================================
