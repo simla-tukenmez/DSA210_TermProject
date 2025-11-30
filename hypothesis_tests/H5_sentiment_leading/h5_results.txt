@@ -1,0 +1,62 @@
+================================================================================
+H5: SENTIMENT AS LEADING INDICATOR - RESULTS
+================================================================================
+
+Analysis Date: 2025-11-30 03:13:13
+Student: Simla Tükenmez (32613)
+Course: DSA210 - Fall 2025-2026
+
+================================================================================
+RESEARCH QUESTION
+================================================================================
+
+Does Ekşi Sözlük sentiment have LEADING predictive power for
+BIST100 returns? (i.e., does yesterday's sentiment predict today's returns?)
+
+================================================================================
+METHODOLOGY
+================================================================================
+
+Model: BIST100_Return[t] = β₀ + β₁ × Sentiment[t-1] + ε
+
+Sentiment Source: Ekşi Sözlük daily entries (2023-2025)
+  - BERT-based Turkish sentiment model
+  - Daily aggregated scores (-1 to +1)
+
+Sample Size: 698 observations
+
+================================================================================
+CORRELATION ANALYSIS
+================================================================================
+
+Same-day (Sentiment[t] ↔ Return[t]):  r =   0.1713
+Leading (Sentiment[t-1] → Return[t]): r =   0.0032
+
+→ Same-day correlation is STRONGER (reactive, not predictive)
+
+================================================================================
+REGRESSION RESULTS
+================================================================================
+
+  β₀ (Intercept):          0.1021
+  β₁ (Sentiment[t-1]):     0.0229 
+  P-value:                 0.9318
+  R²:                      0.0000
+
+================================================================================
+CONCLUSION
+================================================================================
+
+Decision: H5 is NOT SUPPORTED
+
+Sentiment does NOT have significant predictive power (p = 0.9318).
+Leading correlation is essentially zero (r = 0.0032).
+
+INTERPRETATION:
+Ekşi Sözlük sentiment is REACTIVE rather than PREDICTIVE.
+People express negative sentiment AFTER the market drops,
+not before. Social media reflects rather than predicts market moves.
+
+================================================================================
+END OF REPORT
+================================================================================
