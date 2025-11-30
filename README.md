@@ -80,7 +80,9 @@ These turning points allow the project to investigate:
 | **H5:** Sentiment Prediction | ❌ Not Supported | 0.936 | Sentiment is reactive, not predictive |
 | **H6:** Hybrid Model | ✅ **Supported** | 0.002 | Digital indicators add value |
 
-**Overall Score:** 3/6 hypotheses supported (50%)
+**Overall Score:** 3/6 hypotheses supported (50%) 
+
+**Note:** For an emerging market dataset with crisis periods, rejecting hypotheses is expected - market behavior is nonlinear and digital indicators behave differently.
 
 <details>
 <summary><b>📈 Click to see detailed results</b></summary>
@@ -116,7 +118,7 @@ DSA210_TermProject/
 │       └── master_data_with_sentiment.xlsx  # Main analysis dataset
 │
 ├── EDA/
-│   ├── visualizations/              # EDA charts
+│   ├── Visualizations/              # EDA charts
 │   ├── eda_analysis.ipynb           # Exploratory Data Analysis
 │   └── eda_summary_statistics.csv
 │
@@ -127,7 +129,7 @@ DSA210_TermProject/
 │   ├── H3_regime_shift/
 │   ├── H4_search_behavior/
 │   ├── H5_sentiment_leading/
-│   └── H6_hybrid_vs_tradionational/ 
+│   └── H6_hybrid_vs_traditional/ 
 │
 ├── README.md
 └── requirements.txt
@@ -380,7 +382,7 @@ Ekşi Sözlük sentiment showed:
 
 **Core Libraries:**
 - `Python 3.9+`
-- `pandas`, `numpy` — data manipulation
+- `pandas`, `numpy` - data manipulation
 - `matplotlib`, `seaborn` — visualization
 - `scikit-learn` — machine learning
 - `statsmodels` — statistical tests (Granger, etc.)
@@ -458,62 +460,9 @@ This analysis explores three key areas:
 ---
 ## Next Steps: Machine Learning Extension
 
-This project currently uses **statistical hypothesis testing** (t-tests, correlation, linear regression). The next phase will extend the analysis with **machine learning models** for improved prediction.
+This project currently uses **statistical hypothesis testing** (t-tests, correlation, linear regression). The next phase of the project (January deadline) will apply machine learning models to extend the statistical findings. Regression-based, tree-based, and time-series methods will be explored in the next submission.
 
-### Planned ML Models
-
-<details>
-<summary><b>View ML roadmap</b></summary>
-
-**Phase 1: Baseline Models**
-- Linear Regression (with regularization: Ridge, Lasso)
-- Random Forest Regressor
-- Gradient Boosting (XGBoost)
-
-**Phase 2: Time Series Models**
-- LSTM (Long Short-Term Memory networks)
-- GRU (Gated Recurrent Units)
-- Transformer-based models
-
-**Phase 3: Ensemble Methods**
-- Stacking traditional + digital models
-- Weighted ensemble based on regime (crisis vs. normalization)
-
-### Target Variables
-- **Primary:** Next-day BIST100 returns
-- **Secondary:** Forward volatility (7-day, 30-day)
-- **Tertiary:** Directional accuracy (up/down classification)
-
-### Feature Engineering
-- **Lagged features:** Returns, volatility, sentiment (1-7 days)
-- **Rolling statistics:** Moving averages, momentum indicators
-- **Interaction terms:** Digital Panic × Volatility, Sentiment × USD/TRY
-- **Technical indicators:** RSI, MACD, Bollinger Bands
-- **Event indicators:** Distance to major events
-
-### Evaluation Strategy
-- **Train/Test Split:** 70/30 temporal split (no shuffling)
-- **Walk-forward validation:** Rolling window approach
-- **Metrics:** R², RMSE, MAE, Directional Accuracy, Sharpe Ratio
-- **Baseline comparison:** Beat current hybrid model (R² = 1.98%)
-
-### Research Questions for ML Phase
-1. Can LSTM capture temporal dependencies better than linear regression?
-2. Does Random Forest feature importance confirm Google Trends as top predictor?
-3. Do non-linear models reveal threshold effects (e.g., panic > 0.7 → crash)?
-4. Can ensemble models achieve trading profitability (Sharpe > 1.0)?
-
-### Success Criteria
-- ✅ Beat hybrid linear model R² by ≥ 5%
-- ✅ Directional accuracy > 55%
-- ✅ Feature importance validates digital indicators
-- ✅ Model generalizes to out-of-sample test period
-
-</details>
-
-**Status:** 📝 Planning phase  
-**Timeline:** Phase 3 of course project (next submission --> 02/01/2025)
-
+---
 ## Data Sources
 
 - [Yahoo Finance](https://finance.yahoo.com/)  
