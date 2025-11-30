@@ -1,0 +1,101 @@
+================================================================================
+H3: STRUCTURAL BREAK ANALYSIS - RESULTS
+================================================================================
+
+Analysis Date: 2025-11-30 03:12:44
+Student: Simla Tükenmez (32613)
+Course: DSA210 - Fall 2025-2026
+
+================================================================================
+RESEARCH QUESTION
+================================================================================
+
+Did the June 23, 2023 economic policy change create a structural break
+in the relationship between BIST100 returns and TCMB funding cost changes?
+
+================================================================================
+EVENT CONTEXT
+================================================================================
+
+Date: June 23, 2023
+Event: New economic management team appointed
+  - Mehmet Şimşek: Finance Minister
+  - Hafize Gaye Erkan: TCMB Governor
+
+Policy Shift: Unorthodox → Orthodox monetary policy
+  - Interest rates: 8.5% → 50% (by March 2024)
+  - Return to inflation targeting
+
+================================================================================
+REGRESSION MODEL
+================================================================================
+
+BIST100_Return = β₀ + β₁ * Funding_Cost_Change + ε
+
+Where:
+  BIST100_Return: Daily log return (%)
+  Funding_Cost_Change: Daily change in funding cost (pp)
+
+================================================================================
+PRE-PERIOD REGRESSION (Jan 2023 - Jun 22, 2023)
+================================================================================
+
+Observations: 116
+
+Coefficients:
+  β₀ (Intercept):              -0.0346
+  β₁ (Funding Cost Δ):          0.7053 
+  P-value(β₁):                  0.8545
+  R²:                           0.0003
+
+================================================================================
+POST-PERIOD REGRESSION (Jun 23, 2023 onwards)
+================================================================================
+
+Observations: 584
+
+Coefficients:
+  β₀ (Intercept):               0.1103
+  β₁ (Funding Cost Δ):          0.1868 *
+  P-value(β₁):                  0.0904
+  R²:                           0.0049
+
+================================================================================
+CHOW TEST FOR STRUCTURAL BREAK
+================================================================================
+
+Hypotheses:
+  H₀: β₁_pre = β₁_post (no structural break)
+  H₃: β₁_pre ≠ β₁_post (structural break exists)
+
+Test Results:
+  Chow F-statistic:             0.3128
+  P-value:                      0.7315
+  Significance level:       α = 0.05
+
+================================================================================
+CONCLUSION
+================================================================================
+
+Decision: FAIL TO REJECT H₀ at α = 0.05
+
+H3 is NOT SUPPORTED. No significant structural break detected.
+
+Although the coefficients differ:
+  Pre-period:  β₁ = 0.7053
+  Post-period: β₁ = 0.1868
+
+This difference is not statistically significant (p = 0.7315).
+
+================================================================================
+INTERPRETATION
+================================================================================
+
+The lack of structural break may indicate:
+1. Markets adapted gradually rather than abruptly
+2. Other factors dominated the BIST100-rate relationship
+3. Policy transmission mechanism remained fundamentally similar
+
+================================================================================
+END OF REPORT
+================================================================================
