@@ -118,8 +118,8 @@ DSA210_TermProject/
 │       └── master_data_with_sentiment.xlsx  # Main analysis dataset
 │
 ├── EDA/
-│   ├── Visualizations/              # EDA charts
-│   ├── eda_analysis.ipynb           # Exploratory Data Analysis
+│   ├── Visualizations/              # Standalone visualizations
+│   ├── eda_analysis.ipynb           # Complete EDA with hypothesis definitions
 │   └── eda_summary_statistics.csv
 │
 │
@@ -129,8 +129,15 @@ DSA210_TermProject/
 │   ├── H3_regime_shift/
 │   ├── H4_search_behavior/
 │   ├── H5_sentiment_leading/
-│   └── H6_hybrid_vs_traditional/ 
-│
+│   └── H6_hybrid_vs_traditional/
+│ 
+├── machine_learning/                 # ML validation & comparison
+│   ├── ml_analysis.ipynb            # Complete 3-part ML analysis
+│   └── figures/
+│ 
+├── interpretation/
+│   └── interpretation_and_discussion.ipynb  # Deep dive analysis
+│ 
 ├── README.md
 └── requirements.txt
 ```
@@ -378,7 +385,55 @@ Ekşi Sözlük sentiment showed:
 **Finding:** Turkish markets respond more to unexpected shocks than to deliberate policy shifts.
 
 ---
+## Machine Learning Analysis ✅
 
+**Status:** COMPLETED (January 2026)
+
+This project extends statistical findings with comprehensive ML validation:
+
+### Three Approaches Tested:
+1. **Regression** (Ridge, Lasso, ElasticNet, Random Forest, OLS)
+2. **Classification** (Logistic, Tree, RF, Gradient Boost, Naive Bayes)
+3. **Time Series** (RF, Gradient Boost, Naive Persistence baseline)
+
+### Key Findings:
+
+**Statistical Methods Optimal ✅**
+- All ML regression models: **Negative R²** (worse than mean!)
+- Classification: **F1 = 0.39** (marginal utility)
+- Time Series: **Naive baseline beats all ML** by 12.6%
+
+**Result:** In crisis periods with small samples, **simple statistical methods outperform complex ML**. This validates our H4-H6 statistical approach and demonstrates when NOT to use ML.
+
+**Location:** See `machine_learning/ml_analysis.ipynb` for complete analysis.
+
+**Academic Contribution:** Demonstrates that ML methods may not add value in small-sample emerging market 
+crises. In this Turkish case study (n=478 training observations), simple statistical methods (OLS, naive persistence) outperformed 12+ ML models across three paradigms. Contributes to understanding when NOT to use complex methods 
+in crisis-period forecasting.
+
+---
+### Machine Learning Results
+
+![ML Comparison](ML/Visualiazations/regression_comprehensive.png)
+*All ML models show negative R² - statistical OLS wins*
+
+![Classification Performance](ML/Visualiazations/classification_results.png)
+*Best classifier F1=0.39 (marginal utility for risk detection)*
+
+![Time Series Forecast](ML/Visualiazations/timeseries_results.png)
+*Naive persistence baseline outperforms all ML forecasts*
+
+### Machine Learning Validation:
+
+| Approach | Best Method | Performance | Conclusion |
+|----------|-------------|-------------|------------|
+| **Regression** | OLS (Statistical) | R²=0.02 | ✅ Simple > Complex |
+| **Classification** | Naive Bayes | F1=0.39 | ⚠️ Marginal utility |
+| **Time Series** | Naive Persistence | RMSE=0.371 | ✅ Baseline > ML |
+
+**Key Finding:** Simple baselines consistently outperformed ML across all three approaches. Among ML models, Random Forest performed best in classification (F1=0.38) and time series (RMSE=0.418), but still couldn't match the statistical/naive baselines. This validates the H4-H6 statistical approach and demonstrates that in crisis periods with small samples (n=478), parsimony is beneficial.
+
+---
 ## Technologies & Tools
 
 **Core Libraries:**
@@ -401,13 +456,20 @@ Ekşi Sözlük sentiment showed:
 - `jupyter` — interactive notebooks
 - `git` — version control
 
+**Machine Learning:**
+- `scikit-learn` — regression, classification, time series
+- Ridge, Lasso, ElasticNet, Random Forest, Gradient Boosting
+- Naive Bayes, Logistic Regression, Decision Trees
 ---
 
 ## Reproducibility
 
 All analyses fully reproducible:
 1. Complete dataset in `data/processed/`
-2. Jupyter notebooks with step-by-step code
+2. **Three main notebooks:**
+   - `EDA/eda_analysis.ipynb` — Exploratory analysis with hypothesis definitions
+   - `interpretation/interpretation_and_discussion.ipynb` — Deep dive
+   - `machine_learning/ml_analysis.ipynb` — ML validation (3-part)
 3. Individual test scripts in `hypothesis_tests/`
 4. Fixed random seeds (`random_state=42`)
 
@@ -449,19 +511,18 @@ This analysis explores three key areas:
 3. **Comparative Framework**  
    Tests whether digital panic indicators complement or substitute traditional economic metrics
 
+4. **Methodological Validation**  
+   First comprehensive evidence that in Turkish crisis-period markets:
+   - ML regression fails (all negative R²)
+   - Statistical baselines optimal (OLS, persistence)
+   - Demonstrates WHEN not to use complex methods
+
 ### Novel Elements
 
 - **Digital Panic Index:** Composite metric combining "dolar_kuru" and "enflasyon" search volumes
 - **Turkish NLP:** BERT-based sentiment analysis on 26,000 Ekşi Sözlük entries  
 - **Multi-event analysis:** Earthquake, elections, policy regime change
 - **Hybrid modeling:** Traditional + digital indicator comparison
-
-**Note:** Full discussion of contributions, limitations, and implications will be provided in the final project report.
-
----
-## Next Steps: Machine Learning Extension
-
-This project currently uses **statistical hypothesis testing** (t-tests, correlation, linear regression). The next phase of the project (January deadline) will apply machine learning models to extend the statistical findings. Regression-based, tree-based, and time-series methods will be explored in the next submission.
 
 ---
 ## Data Sources
@@ -512,5 +573,5 @@ DSA 210 - Introduction to Data Science
 
 ---
 
-**Last Updated:** November 30, 2025  
-**Project Status:** Data Stage (Data Collection, EDA and hypothesis tests)
+**Last Updated:** January 2, 2025  
+**Project Status:** Machine Learning Stage (Data Collection, EDA, Hypothesis Tests and ML methods)
