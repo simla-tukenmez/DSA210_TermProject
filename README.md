@@ -553,7 +553,9 @@ This analysis explores three key areas:
 - Expand to other stock indices (BIST30, sector-specific indices)
 - Real-time prediction system using streaming data
 - Cross-country comparison (Turkey vs. other emerging markets)
-- Deep learning models (LSTM, Transformer) for time series forecasting
+- Deep learning models (LSTM, Transformer) for time series forecasting## Limitations & Future Work
+
+This study is limited by the availability of sentiment data and the short time horizon. Future work may include higher-frequency data, alternative sentiment sources, and advanced interpretability methods such as SHAP.
 
 ---
 
