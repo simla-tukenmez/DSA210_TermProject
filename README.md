@@ -414,13 +414,13 @@ in crisis-period forecasting.
 ---
 ### Machine Learning Results
 
-![ML Comparison](ML/Visualiazations/regression_comprehensive.png)
+![ML Comparison](ML/figures/regression_comprehensive.png)
 *All ML models show negative R² - statistical OLS wins*
 
-![Classification Performance](ML/Visualiazations/classification_results.png)
+![Classification Performance](ML/figures/classification_results.png)
 *Best classifier F1=0.39 (marginal utility for risk detection)*
 
-![Time Series Forecast](ML/Visualiazations/timeseries_results.png)
+![Time Series Forecast](ML/figures/timeseries_results.png)
 *Naive persistence baseline outperforms all ML forecasts*
 
 ### Machine Learning Validation:
