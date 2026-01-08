@@ -575,5 +575,5 @@ DSA 210 - Introduction to Data Science
 
 ---
 
-**Last Updated:** January 2, 2025  
+**Last Updated:** January 2, 2026
 **Project Status:** Machine Learning Stage (Data Collection, EDA, Hypothesis Tests and ML methods)
