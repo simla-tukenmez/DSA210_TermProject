@@ -81,9 +81,9 @@ These turning points allow the project to investigate:
 |------------|--------|---------|-------------|
 | **H1:** Earthquake Impact | ✅ **Supported** | 0.038 | -5.19% immediate negative impact |
 | **H2:** Election Volatility | ⚠️ Marginal | 0.105 | 74% higher volatility (not significant) |
-| **H3:** Structural Break | ❌ Not Supported | 0.737 | No change in BIST-rate relationship |
+| **H3:** Structural Break | ❌ Not Supported | 0.7315 | No change in BIST-rate relationship |
 | **H4:** Google Trends ↔ Volatility | ✅ **Supported** | <0.001 | Strong correlation (r=0.24) |
-| **H5:** Sentiment Prediction | ❌ Not Supported | 0.936 | Sentiment is reactive, not predictive |
+| **H5:** Sentiment Prediction | ❌ Not Supported | 0.9318 | Sentiment is reactive, not predictive |
 | **H6:** Hybrid Model | ✅ **Supported** | 0.002 | Digital indicators add value |
 
 **Overall Score:** 3/6 hypotheses supported (50%) 
