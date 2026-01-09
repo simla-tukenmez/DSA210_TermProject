@@ -7,7 +7,7 @@ Student ID: 32613
 Course: DSA210 - Fall 2025-2026
 
 Hypothesis: Higher Google search volume for economic terms (dolar kuru, 
-enflasyon, ekonomik kriz) correlates with higher BIST100 volatility
+enflasyon) correlates with higher BIST100 volatility
 
 Method: Correlation analysis + Regression
 Variables:
@@ -63,7 +63,7 @@ def h4_google_trends_volatility(df):
     print("="*80)
     
     print(f"\nGoogle Trends Variables Available:")
-    trends_cols = [c for c in df.columns if any(x in c.lower() for x in ['dolar', 'enflasyon', 'kriz', 'ekonomik'])]
+    trends_cols = [c for c in df.columns if any(x in c.lower() for x in ['dolar', 'enflasyon'])]
     for col in trends_cols:
         print(f"   - {col}")
     
@@ -71,7 +71,7 @@ def h4_google_trends_volatility(df):
     print(f"\nCreating Composite Digital Panic Index...")
     
     # Select key trends variables
-    key_trends = ['dolar_kuru', 'enflasyon', 'ekonomik_kriz']
+    key_trends = ['dolar_kuru', 'enflasyon']
     
     # Check which are available
     available_trends = [col for col in key_trends if col in df.columns]
