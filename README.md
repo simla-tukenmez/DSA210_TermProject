@@ -141,7 +141,7 @@ DSA210_TermProject/
 │   ├── ml_analysis.ipynb            # Complete 3-part ML analysis
 │   └── figures/
 │ 
-├── interpretation/
+├── interpretation_HT/
 │   └── interpretation_and_discussion.ipynb  # Deep dive analysis
 │ 
 ├── README.md
