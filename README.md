@@ -8,6 +8,12 @@
 **Student/ID: Simla Tükenmez / 32613**
 
 ---
+🌐 **Project Presentation Website:**  
+👉 https://dsa210presantation-simlatukenmez.lovable.app/
+
+📄 This repository contains the full technical implementation, datasets,
+statistical tests, and model development for the project.
+The website serves as a high-level presentation, while all details are documented here.
 
 ## Project Overview
 
