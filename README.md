@@ -106,9 +106,9 @@ These turning points allow the project to investigate:
 
 ### H6: Hybrid Model Superiority ✅
 - **Traditional model R²:** 0.26%
-- **Digital model R²:** 1.93%  
-- **Hybrid model R²:** 2.04%
-- **Digital outperforms traditional by 7.4X**
+- **Digital model R²:** 1.87%  
+- **Hybrid model R²:** 1.98%
+- **Digital outperforms traditional by 7.2X**
 
 **Key Finding:** In Turkey's crisis context, behavioral indicators (Google searches) predict volatility better than traditional fundamentals (interest rates, USD/TRY).
 
@@ -364,7 +364,7 @@ See [hypothesis_tests](hypothesis_tests) for detailed results.
 
 Traditional economic indicators (funding cost, USD/TRY changes) showed **weak predictive power** (R² = 0.26%) for volatility.
 
-Digital panic indicators achieved **7.4X better performance** (R² = 1.93%), suggesting behavioral signals matter more than fundamentals during high-uncertainty periods.
+Digital panic indicators achieved **7.2X better performance** (R² = 1.87%), suggesting behavioral signals matter more than fundamentals during high-uncertainty periods.
 
 ### 2. **Currency Anxiety Dominates Turkish Markets**
 
