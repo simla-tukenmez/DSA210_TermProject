@@ -159,7 +159,7 @@ DSA210_TermProject/
 - CPI Index
   
 **Digital Panic Indicators:**
-- Google Trends: "dolar_kuru", "enflasyon", "ekonomik_kriz"
+- Google Trends: "dolar_kuru", "enflasyon"
 - Ekşi Sözlük Sentiment (26,000 entries, BERT-based)
 - Digital Panic Index (composite)
 
@@ -575,5 +575,6 @@ DSA 210 - Introduction to Data Science
 
 ---
 
-**Last Updated:** January 2, 2026
-**Project Status:** Machine Learning Stage (Data Collection, EDA, Hypothesis Tests and ML methods)
+**Last Updated:** January 9, 2026
+**Project Status:** Completed (Data Collection, EDA, Hypothesis Tests, ML Methods, Interpretations, Website for Presentation)
+
